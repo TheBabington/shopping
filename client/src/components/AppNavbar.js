@@ -24,9 +24,9 @@ toggle = () => {
 render() {
     return(
         <div>
-        <Navbar color="dark" dark expand="sm" class="mb-5">
+        <Navbar color="dark" dark expand="sm" className="mb-5">
             <Container>
-                <navBarBrand href="/">ShoppingList</navBarBrand>
+                <NavbarBrand href="/">ShoppingList</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>

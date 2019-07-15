@@ -15,7 +15,7 @@ class ShoppingList extends Component {
     render() {
         const { items } = this.state;
         return(
-            <container>
+            <Container>
                 <button
                     color="dark"
                     style={{marginBottom: '2rem'}}
@@ -29,7 +29,7 @@ class ShoppingList extends Component {
                     }}
                 
                 >Add Item</button>
-            </container>
+            </Container>
         )
     }
 }
