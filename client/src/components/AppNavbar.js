@@ -22,14 +22,26 @@ toggle = () => {
 }
 
 render() {
-    <div>
+    return(
+        <div>
         <Navbar color="dark" dark expand="sm" class="mb-5">
             <Container>
                 <navBarBrand href="/">ShoppingList</navBarBrand>
                 <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                    <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <NavLink href="https//google.com">
+                                GooGlE
+                            </NavLink>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
             </Container>
         </Navbar>
     </div>
+    );
+    
 
 }
     }
